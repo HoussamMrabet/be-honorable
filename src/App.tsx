@@ -73,9 +73,9 @@ function App() {
       <div className="reveal">
         <Community />
       </div>
-      <div className="reveal">
+      {/* <div className="reveal">
         <Stats transactions={transactions} />
-      </div>
+      </div> */}
       <div className="reveal">
         <Contact />
       </div>
