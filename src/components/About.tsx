@@ -98,7 +98,7 @@ const About = () => {
               <div className="absolute -inset-1 bg-gradient-to-r from-primary to-primary/50 rounded-lg blur opacity-25 group-hover:opacity-40 transition duration-1000 group-hover:duration-200"></div>
               <div className="relative h-[600px] overflow-hidden rounded-lg">
                 <img 
-                  src="/grim.avif" 
+                  src="/grim.jpg" 
                   alt="Distinguished businessman" 
                   className="w-full h-full object-cover transform scale-105 group-hover:scale-100 transition-transform duration-500"
                 />

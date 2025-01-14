@@ -6,7 +6,7 @@ const VideoSection = () => {
   const [isPlaying, setIsPlaying] = useState(false);
   const videoRef = useRef<HTMLVideoElement>(null);
 
-  const handlePlayPause = () => {
+  const togglePlayPause = () => {
     if (videoRef.current) {
       if (isPlaying) {
         videoRef.current.pause();
@@ -14,18 +14,6 @@ const VideoSection = () => {
         videoRef.current.play();
       }
       setIsPlaying(!isPlaying);
-    }
-  };
-
-  const handleVideoClick = () => {
-    if (videoRef.current) {
-      if (videoRef.current.paused) {
-        videoRef.current.play();
-        setIsPlaying(true);
-      } else {
-        videoRef.current.pause();
-        setIsPlaying(false);
-      }
     }
   };
 
@@ -58,26 +46,28 @@ const VideoSection = () => {
             <div className="aspect-video relative">
               <video 
                 ref={videoRef}
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover cursor-pointer"
                 poster="https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&q=80"
                 loop
                 muted={isMuted}
                 playsInline
-                onClick={handleVideoClick} // Add onClick event to the video
+                onClick={togglePlayPause} // Toggle play/pause on video click
               >
                 <source src="/hustle.mp4" type="video/mp4" />
                 Your browser does not support the video tag.
               </video>
 
               {/* Play Button Overlay */}
-              <div className="absolute inset-0 flex items-center justify-center bg-dark/50 group-hover:bg-dark/30 transition-colors duration-300">
-                <button 
-                  onClick={handlePlayPause}
-                  className={`bg-primary/90 hover:bg-primary text-dark p-6 rounded-full transform transition-all duration-300 group-hover:scale-110 ${isPlaying ? 'hidden' : ''}`}
-                >
-                  <Play className={`w-8 h-8`} />
-                </button>
-              </div>
+              {!isPlaying && (
+                <div className="absolute inset-0 flex items-center justify-center bg-dark/50 group-hover:bg-dark/30 transition-colors duration-300">
+                  <button 
+                    onClick={togglePlayPause}
+                    className="bg-primary/90 hover:bg-primary text-dark p-6 rounded-full transform transition-all duration-300 group-hover:scale-110"
+                  >
+                    <Play className="w-8 h-8" />
+                  </button>
+                </div>
+              )}
 
               {/* Controls */}
               <div className="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-dark to-transparent">

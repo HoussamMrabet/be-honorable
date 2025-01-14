@@ -28,7 +28,7 @@ const Navbar = () => {
           <div className="flex items-center justify-between">
             {/* Logo */}
             <a href="#" className="flex items-center space-x-2 group">
-              <Shield className="w-8 h-8 text-primary transition-transform duration-300 group-hover:scale-110" />
+              <img src='/logo.jpg' className="w-8 h-8 text-primary transition-transform duration-300 group-hover:scale-110" />
               <span className="text-xl font-playfair">Be Honorable</span>
             </a>
 

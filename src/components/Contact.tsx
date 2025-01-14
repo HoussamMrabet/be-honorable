@@ -45,7 +45,7 @@ import {
 					<input 
 					  type="text"
 					  className="w-full bg-dark/50 border border-primary/20 rounded-lg px-4 py-3 focus:outline-none focus:border-primary transition-colors duration-300"
-					  placeholder="John"
+					  placeholder="Grim"
 					/>
 				  </div>
 				  <div>
@@ -53,7 +53,7 @@ import {
 					<input 
 					  type="text"
 					  className="w-full bg-dark/50 border border-primary/20 rounded-lg px-4 py-3 focus:outline-none focus:border-primary transition-colors duration-300"
-					  placeholder="Doe"
+					  placeholder="Hustle"
 					/>
 				  </div>
 				</div>
@@ -63,7 +63,7 @@ import {
 				  <input 
 					type="email"
 					className="w-full bg-dark/50 border border-primary/20 rounded-lg px-4 py-3 focus:outline-none focus:border-primary transition-colors duration-300"
-					placeholder="john@example.com"
+					placeholder="grim@example.com"
 				  />
 				</div>
 				
@@ -120,7 +120,7 @@ import {
 				  </div>
 				  <div>
 					<h3 className="text-xl font-montserrat mb-2">Global Presence</h3>
-					<p className="text-secondary">With offices in New York, London, and Singapore, we're always near you.</p>
+					<p className="text-secondary">With offices in multiple countries, we're always near you.</p>
 				  </div>
 				</div>
 			  </div>
