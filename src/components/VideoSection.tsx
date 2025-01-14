@@ -60,9 +60,9 @@ const VideoSection = () => {
               <div className="absolute inset-0 flex items-center justify-center bg-dark/50 group-hover:bg-dark/30 transition-colors duration-300">
                 <button 
                   onClick={handlePlayPause}
-                  className="bg-primary/90 hover:bg-primary text-dark p-6 rounded-full transform transition-all duration-300 group-hover:scale-110"
+                  className={`bg-primary/90 hover:bg-primary text-dark p-6 rounded-full transform transition-all duration-300 group-hover:scale-110 ${isPlaying ? 'hidden' : ''}`}
                 >
-                  <Play className={`w-8 h-8 ${isPlaying ? 'hidden' : ''}`} />
+                  <Play className={`w-8 h-8`} />
                 </button>
               </div>
 
