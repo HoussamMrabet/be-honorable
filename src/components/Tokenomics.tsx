@@ -70,7 +70,7 @@ const Tokenomics = () => {
   ];
 
   return (
-    <div className="py-24 px-4 relative overflow-hidden">
+    <div id='tokenomics' className="py-24 px-4 relative overflow-hidden">
       <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1639762681485-074b7f938ba0?auto=format&fit=crop&q=80')] bg-cover bg-center opacity-5"></div>
       <div className="absolute inset-0 bg-gradient-to-b from-dark via-dark to-transparent"></div>
       

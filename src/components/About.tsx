@@ -10,7 +10,7 @@ import {
 
 const About = () => {
   return (
-      <div className="relative py-24 px-4 overflow-hidden">
+      <div id='about' className="relative py-24 px-4 overflow-hidden">
         <div className="absolute inset-0">
           <img 
             src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&q=80" 

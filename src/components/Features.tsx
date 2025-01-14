@@ -6,7 +6,7 @@ import {
 
 const Features = () => {
   return (
-      <div className="py-20 px-4">
+      <div id='features' className="py-20 px-4">
         <div className="container mx-auto">
           <h2 className="text-4xl md:text-5xl mb-16 text-center">
             Built on <span className="text-primary">Honor</span> and <span className="text-primary">Trust</span>

@@ -166,6 +166,10 @@
   }
 }
 
+* {
+  scroll-behavior: smooth;
+}
+
 /* Card Hover Effects */
 .card-hover {
   transition: all 0.3s ease;
@@ -174,4 +178,35 @@
 .card-hover:hover {
   transform: translateY(-5px);
   box-shadow: 0 10px 30px -5px rgba(212, 175, 55, 0.2);
+}
+
+/* Customize the scrollbar */
+::-webkit-scrollbar {
+  width: 12px; /* Width of the scrollbar */
+  height: 12px; /* Height of the scrollbar for horizontal scrolling */
+}
+
+::-webkit-scrollbar-track {
+  background: #2C2C2C; /* Track color to match the background */
+  border-radius: 6px; /* Smooth edges for the track */
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, #FF5733, #FFC300); /* Gradient using your primary colors */
+  border-radius: 6px; /* Smooth edges for the thumb */
+  border: 2px solid #2C2C2C; /* Add some spacing between the track and thumb */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(to bottom, #FFC300, #FF5733); /* Change gradient on hover */
+}
+
+::-webkit-scrollbar-corner {
+  background: #2C2C2C; /* Match the corner with the track color */
+}
+
+/* For Firefox */
+* {
+  scrollbar-width: thin; /* Thin scrollbar */
+  scrollbar-color: linear-gradient(to bottom, #FF5733, #FFC300) #2C2C2C; /* Thumb and track colors */
 }

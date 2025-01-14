@@ -16,7 +16,7 @@ interface TestimonialProps {
 }
 
 const Testimonial = ({ quote, author, role, avatar }: TestimonialProps) => (
-  <div className="relative group">
+  <div id='community' className="relative group">
     <div className="absolute inset-0 bg-gradient-to-r from-primary/20 to-primary/10 rounded-lg blur-xl group-hover:blur-2xl transition-all duration-300 opacity-0 group-hover:opacity-100"></div>
     <div className="relative bg-[#2C2C2C]/90 p-8 rounded-lg border border-primary/20 h-full transform transition-transform duration-300 hover:-translate-y-1">
       <Quote className="w-8 h-8 text-primary/30 mb-4" />
