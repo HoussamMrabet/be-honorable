@@ -87,7 +87,7 @@ const Community = () => {
   const socialLinks = [
     {
       platform: "Instagram",
-      handle: "Join our server",
+      handle: "@BeHonorableOfficial",
       members: "127.8K",
       icon: Instagram
     },
@@ -98,7 +98,7 @@ const Community = () => {
       icon: Send
     },
     {
-      platform: "X",
+      platform: "Twitter",
       handle: "@BeHonorable",
       members: "245.6K",
       icon: Twitter
@@ -166,7 +166,7 @@ const Community = () => {
             <h3 className="text-2xl font-montserrat mb-3">Ready to Join Us?</h3>
             <p className="text-secondary mb-6">Connect with like-minded individuals who share your values</p>
             <button className="bg-primary hover:bg-primary/90 text-dark px-8 py-3 rounded-lg font-montserrat font-bold transition-colors duration-300 flex items-center justify-center mx-auto">
-              Join Discord
+              Join Telegram
               <Send className="ml-2 w-5 h-5" />
             </button>
           </div>
