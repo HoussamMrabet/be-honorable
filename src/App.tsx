@@ -9,6 +9,7 @@ import {
   Globe
 } from 'lucide-react';
 
+import Navbar from "./components/Navbar";
 import About from "./components/About";
 import Hero from "./components/Hero";
 import Features from "./components/Features";
@@ -30,19 +31,55 @@ function App() {
       setTransactions(prev => prev + Math.floor(Math.random() * 10));
     }, 3000);
     
-    return () => clearInterval(interval);
+    // Scroll reveal animation
+    const handleScroll = () => {
+      const reveals = document.querySelectorAll('.reveal');
+      
+      reveals.forEach(element => {
+        const windowHeight = window.innerHeight;
+        const elementTop = element.getBoundingClientRect().top;
+        const elementVisible = 150;
+        
+        if (elementTop < windowHeight - elementVisible) {
+          element.classList.add('active');
+        }
+      });
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    handleScroll(); // Initial check
+    
+    return () => {
+      clearInterval(interval);
+      window.removeEventListener('scroll', handleScroll);
+    };
   }, []);
 
   return (
     <div className="min-h-screen bg-dark text-white">
+      <Navbar />
       <Hero price={price} />
-      <About />
-      <Features />
-      <Tokenomics />
-      <Roadmap />
-      <Buy />
-      <Community />
-      <Stats transactions={transactions} />
+      <div className="reveal">
+        <About />
+      </div>
+      <div className="reveal">
+        <Features />
+      </div>
+      <div className="reveal">
+        <Tokenomics />
+      </div>
+      <div className="reveal">
+        <Roadmap />
+      </div>
+      <div className="reveal">
+        <Buy />
+      </div>
+      <div className="reveal">
+        <Community />
+      </div>
+      <div className="reveal">
+        <Stats transactions={transactions} />
+      </div>
       <Footer />
     </div>
   );

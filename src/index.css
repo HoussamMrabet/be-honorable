@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Montserrat:wght@600;700&family=Inter:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Cormorant:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -6,32 +6,172 @@
 
 @layer base {
   body {
-    @apply bg-[#1A1A1A] text-white font-inter;
+    @apply bg-[#1A1A1A] text-white font-montserrat;
   }
   
   h1, h2, h3 {
-    @apply font-playfair;
+    @apply font-cinzel;
+  }
+
+  html {
+    scroll-behavior: smooth;
   }
 }
 
+/* Gradient Overlay */
 .gradient-overlay {
   background: linear-gradient(135deg, #2C2C2C 0%, #000000 100%);
 }
 
+/* Hover Effects */
 .hover-gold {
   @apply transition-colors duration-300 hover:text-[#D4AF37];
 }
 
+/* Card Animations */
 .stats-card {
-  @apply bg-[#2C2C2C] p-6 rounded-lg border border-[#333333];
+  @apply bg-[#2C2C2C] p-6 rounded-lg border border-[#333333] transition-all duration-500;
 }
 
 .animate-float {
   animation: float 3s ease-in-out infinite;
 }
 
+/* Scroll Reveal Animations */
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease-out;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.reveal-delay-1 {
+  transition-delay: 0.1s;
+}
+
+.reveal-delay-2 {
+  transition-delay: 0.2s;
+}
+
+.reveal-delay-3 {
+  transition-delay: 0.3s;
+}
+
+/* Hover Scale Effect */
+.hover-scale {
+  transition: transform 0.3s ease-out;
+}
+
+.hover-scale:hover {
+  transform: scale(1.02);
+}
+
+/* Button Animations */
+.btn-animate {
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.btn-animate::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  transition: width 0.6s ease, height 0.6s ease;
+}
+
+.btn-animate:hover::after {
+  width: 300%;
+  height: 300%;
+}
+
+/* Light Streaks */
+.light-streak-1 {
+  position: absolute;
+  width: 2px;
+  height: 200px;
+  background: linear-gradient(to bottom, transparent, #D4AF37, transparent);
+  left: 30%;
+  top: -200px;
+  transform: rotate(45deg);
+  animation: streak 3s linear infinite;
+  opacity: 0.3;
+}
+
+.light-streak-2 {
+  position: absolute;
+  width: 2px;
+  height: 200px;
+  background: linear-gradient(to bottom, transparent, #D4AF37, transparent);
+  left: 60%;
+  top: -200px;
+  transform: rotate(45deg);
+  animation: streak 4s linear infinite;
+  animation-delay: 2s;
+  opacity: 0.2;
+}
+
+/* Shimmer Effect */
+.shimmer {
+  position: relative;
+  overflow: hidden;
+}
+
+.shimmer::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(
+    to right,
+    transparent 0%,
+    rgba(255, 255, 255, 0.1) 50%,
+    transparent 100%
+  );
+  animation: shimmer 2s infinite;
+  transform: translateX(-100%);
+}
+
+/* Animations */
 @keyframes float {
   0% { transform: translateY(0px); }
   50% { transform: translateY(-10px); }
   100% { transform: translateY(0px); }
+}
+
+@keyframes streak {
+  0% {
+    transform: translateY(-100%) rotate(45deg);
+  }
+  100% {
+    transform: translateY(200%) rotate(45deg);
+  }
+}
+
+@keyframes shimmer {
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+/* Card Hover Effects */
+.card-hover {
+  transition: all 0.3s ease;
+}
+
+.card-hover:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px -5px rgba(212, 175, 55, 0.2);
 }

@@ -10,9 +10,9 @@ export default {
         darker: '#000000',
       },
       fontFamily: {
-        playfair: ['"Playfair Display"', 'serif'],
+        cinzel: ['Cinzel', 'serif'],
+        cormorant: ['Cormorant', 'serif'],
         montserrat: ['Montserrat', 'sans-serif'],
-        inter: ['Inter', 'sans-serif'],
       },
     },
   },
