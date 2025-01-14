@@ -39,31 +39,31 @@ const Tokenomics = () => {
   const distribution = [
     {
       title: "Community Rewards",
-      percentage: 40,
+      percentage: 100,
       description: "Allocated for staking rewards, liquidity mining, and community initiatives",
       icon: Users
     },
     {
       title: "Public Sale",
-      percentage: 30,
+      percentage: 100,
       description: "Available for public trading and initial token offering",
       icon: Wallet
     },
     {
       title: "Treasury",
-      percentage: 15,
+      percentage: 100,
       description: "Reserved for development, marketing, and strategic partnerships",
       icon: Landmark
     },
     {
       title: "Team & Advisors",
-      percentage: 10,
+      percentage: 100,
       description: "Vested over 24 months with 6-month cliff",
       icon: Lock
     },
     {
       title: "Liquidity Pool",
-      percentage: 5,
+      percentage: 100,
       description: "Locked for 5 years to ensure trading stability",
       icon: Coins
     }
@@ -93,7 +93,7 @@ const Tokenomics = () => {
           ))}
         </div>
 
-        <div className="bg-[#2C2C2C]/80 p-8 rounded-lg backdrop-blur-sm border border-primary/20 max-w-4xl mx-auto">
+        {/* <div className="bg-[#2C2C2C]/80 p-8 rounded-lg backdrop-blur-sm border border-primary/20 max-w-4xl mx-auto">
           <h3 className="text-2xl font-montserrat mb-6 text-center">Token Metrics</h3>
           <div className="grid md:grid-cols-3 gap-8">
             <div className="text-center">
@@ -109,7 +109,7 @@ const Tokenomics = () => {
               <p className="text-secondary font-montserrat">Transaction Fee</p>
             </div>
           </div>
-        </div>
+        </div> */}
 
         <div className="mt-16 text-center max-w-2xl mx-auto">
           <h3 className="text-2xl font-montserrat mb-4">Token Utility</h3>
@@ -118,10 +118,10 @@ const Tokenomics = () => {
               <h4 className="text-primary font-montserrat mb-2">Governance</h4>
               <p className="text-secondary text-sm">Vote on key protocol decisions and shape the future of the ecosystem</p>
             </div>
-            <div className="bg-[#2C2C2C]/60 p-6 rounded-lg border border-primary/10">
+            {/* <div className="bg-[#2C2C2C]/60 p-6 rounded-lg border border-primary/10">
               <h4 className="text-primary font-montserrat mb-2">Staking</h4>
               <p className="text-secondary text-sm">Earn passive income by participating in the network's security</p>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

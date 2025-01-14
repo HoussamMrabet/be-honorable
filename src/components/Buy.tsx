@@ -37,19 +37,19 @@ const Buy = () => {
     {
       number: 1,
       title: "Create Your Wallet",
-      description: "Download and set up MetaMask or Trust Wallet to store your tokens securely. Back up your recovery phrase in a safe place.",
+      description: "Download and set up Phantom Wallet to store your tokens securely. Back up your recovery phrase in a safe place.",
       icon: Wallet
     },
     {
       number: 2,
       title: "Fund Your Wallet",
-      description: "Purchase ETH through your preferred exchange or payment method and transfer it to your wallet address.",
+      description: "Purchase SOL through your preferred exchange or payment method and transfer it to your wallet address.",
       icon: CreditCard
     },
     {
       number: 3,
       title: "Acquire BE Token",
-      description: "Connect your wallet to our approved DEX and swap ETH for BE tokens. Always verify the contract address.",
+      description: "Connect your wallet to our approved DEX and swap SOL for BE tokens. Always verify the contract address.",
       icon: ArrowRightCircle
     }
   ];

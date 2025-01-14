@@ -1,5 +1,5 @@
 import { 
-  MessageCircle, 
+  Instagram, 
   Send, 
   Twitter, 
   Globe,
@@ -86,10 +86,10 @@ const Community = () => {
 
   const socialLinks = [
     {
-      platform: "Discord",
+      platform: "Instagram",
       handle: "Join our server",
       members: "127.8K",
-      icon: MessageCircle
+      icon: Instagram
     },
     {
       platform: "Telegram",
@@ -98,7 +98,7 @@ const Community = () => {
       icon: Send
     },
     {
-      platform: "Twitter",
+      platform: "X",
       handle: "@BeHonorable",
       members: "245.6K",
       icon: Twitter

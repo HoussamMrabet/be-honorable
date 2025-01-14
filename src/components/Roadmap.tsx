@@ -64,7 +64,7 @@ const Roadmap = () => {
     {
       phase: "Phase 2 - Q3 2024",
       title: "Ecosystem Growth",
-      description: "Staking platform launch, governance implementation, and strategic partnerships.",
+      description: "Governance implementation, and strategic partnerships.",
       status: "current",
       icon: Building2
     },
