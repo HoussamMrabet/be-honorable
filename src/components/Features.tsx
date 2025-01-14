@@ -16,19 +16,19 @@ const Features = () => {
             <div className="stats-card animate-float">
               <Shield className="text-primary w-12 h-12 mb-4" />
               <h3 className="text-2xl mb-3 font-montserrat">Secure by Design</h3>
-              <p className="text-secondary">100%</p>
+              <p className="text-3xl font-playfair text-primary">100%</p>
             </div>
             
             <div className="stats-card animate-float" style={{animationDelay: '0.2s'}}>
               <BarChart3 className="text-primary w-12 h-12 mb-4" />
               <h3 className="text-2xl mb-3 font-montserrat">Simple Tokenomics</h3>
-              <p className="text-secondary">100%</p>
+              <p className="text-3xl font-playfair text-primary">100%</p>
             </div>
             
             <div className="stats-card animate-float" style={{animationDelay: '0.4s'}}>
               <Users className="text-primary w-12 h-12 mb-4" />
               <h3 className="text-2xl mb-3 font-montserrat">Elite Community</h3>
-              <p className="text-secondary">100%</p>
+              <p className="text-3xl font-playfair text-primary">100%</p>
             </div>
           </div>
         </div>

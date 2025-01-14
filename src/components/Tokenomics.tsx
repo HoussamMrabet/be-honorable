@@ -113,7 +113,7 @@ const Tokenomics = () => {
 
         <div className="mt-16 text-center max-w-2xl mx-auto">
           <h3 className="text-2xl font-montserrat mb-4">Token Utility</h3>
-          <div className="grid md:grid-cols-2 gap-6">
+          {/* <div className="grid md:grid-cols-2 gap-6"> */}
             <div className="bg-[#2C2C2C]/60 p-6 rounded-lg border border-primary/10">
               <h4 className="text-primary font-montserrat mb-2">Governance</h4>
               <p className="text-secondary text-sm">Vote on key protocol decisions and shape the future of the ecosystem</p>
@@ -122,7 +122,7 @@ const Tokenomics = () => {
               <h4 className="text-primary font-montserrat mb-2">Staking</h4>
               <p className="text-secondary text-sm">Earn passive income by participating in the network's security</p>
             </div> */}
-          </div>
+          {/* </div> */}
         </div>
       </div>
     </div>
