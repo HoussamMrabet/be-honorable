@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Montserrat:wght@600;700&family=Inter:wght@400;500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-[#1A1A1A] text-white font-inter;
+  }
+  
+  h1, h2, h3 {
+    @apply font-playfair;
+  }
+}
+
+.gradient-overlay {
+  background: linear-gradient(135deg, #2C2C2C 0%, #000000 100%);
+}
+
+.hover-gold {
+  @apply transition-colors duration-300 hover:text-[#D4AF37];
+}
+
+.stats-card {
+  @apply bg-[#2C2C2C] p-6 rounded-lg border border-[#333333];
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+}
