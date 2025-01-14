@@ -167,7 +167,7 @@ const Community = () => {
             <p className="text-secondary mb-6">Connect with like-minded individuals who share your values</p>
             <button className="bg-primary hover:bg-primary/90 text-dark px-8 py-3 rounded-lg font-montserrat font-bold transition-colors duration-300 flex items-center justify-center mx-auto">
               Join Discord
-              <MessageCircle className="ml-2 w-5 h-5" />
+              <Send className="ml-2 w-5 h-5" />
             </button>
           </div>
         </div>
