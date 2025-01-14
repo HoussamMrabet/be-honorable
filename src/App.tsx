@@ -1,13 +1,4 @@
-import React, { useState, useEffect } from 'react';
-import { 
-  TrendingUp, 
-  Shield, 
-  Users, 
-  ChevronRight,
-  BarChart3,
-  Lock,
-  Globe
-} from 'lucide-react';
+import { useState, useEffect } from 'react';
 
 import Navbar from "./components/Navbar";
 import About from "./components/About";
@@ -19,9 +10,11 @@ import Tokenomics from "./components/Tokenomics";
 import Roadmap from "./components/Roadmap";
 import Buy from "./components/Buy";
 import Community from "./components/Community";
+import Contact from "./components/Contact";
+import VideoSection from "./components/VideoSection";
 
 function App() {
-  const [price, setPrice] = useState(1234.56);
+  const [price, setPrice] = useState(12.56);
   const [transactions, setTransactions] = useState(8234);
   
   useEffect(() => {
@@ -66,6 +59,9 @@ function App() {
         <Features />
       </div>
       <div className="reveal">
+        <VideoSection />
+      </div>
+      <div className="reveal">
         <Tokenomics />
       </div>
       <div className="reveal">
@@ -76,6 +72,9 @@ function App() {
       </div>
       <div className="reveal">
         <Community />
+      </div>
+      <div className="reveal">
+        <Contact />
       </div>
       <div className="reveal">
         <Stats transactions={transactions} />

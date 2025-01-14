@@ -34,12 +34,12 @@ const Navbar = () => {
 
             {/* Desktop Menu */}
             <div className="hidden md:flex items-center space-x-8">
-              <a href="#about" className="text-secondary hover:text-primary transition-colors duration-300">About</a>
-              <a href="#features" className="text-secondary hover:text-primary transition-colors duration-300">Features</a>
-              <a href="#tokenomics" className="text-secondary hover:text-primary transition-colors duration-300">Tokenomics</a>
-              <a href="#roadmap" className="text-secondary hover:text-primary transition-colors duration-300">Roadmap</a>
-              <a href="#community" className="text-secondary hover:text-primary transition-colors duration-300">Community</a>
-              <button className="bg-primary/10 text-primary px-4 py-2 rounded-lg font-montserrat hover:bg-primary/20 transition-colors duration-300 flex items-center">
+              <a href="#about" className="text-white hover:text-primary transition-colors duration-300">About</a>
+              <a href="#features" className="text-white hover:text-primary transition-colors duration-300">Features</a>
+              <a href="#tokenomics" className="text-white hover:text-primary transition-colors duration-300">Tokenomics</a>
+              <a href="#roadmap" className="text-white hover:text-primary transition-colors duration-300">Roadmap</a>
+              <a href="#community" className="text-white hover:text-primary transition-colors duration-300">Community</a>
+              <button className="bg-primary/70 text-[#1a1a1a] font-semibold px-4 py-2 rounded-lg font-montserrat hover:bg-primary/90 transition-colors duration-300 flex items-center">
                 Buy Now
                 <ChevronRight className="w-4 h-4 ml-1" />
               </button>

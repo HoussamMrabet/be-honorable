@@ -26,10 +26,10 @@ const Hero = ({price}: {price:number;}) => {
         </div>
       </div>
       
-      <div className="container mx-auto px-4 relative z-30 pt-20">
+      <div className="container mx-auto px-4 relative z-30 pt-28">
         <div className="max-w-5xl">
           {/* Trust badges */}
-          <div className="flex flex-wrap gap-6 mb-8 items-center">
+          {/* <div className="flex flex-wrap gap-6 mb-8 items-center">
             <div className="bg-dark/50 backdrop-blur-sm px-4 py-2 rounded-full border border-primary/20 flex items-center">
               <Shield className="w-4 h-4 text-primary mr-2" />
               <span className="text-sm">Audited by CertiK</span>
@@ -42,16 +42,18 @@ const Hero = ({price}: {price:number;}) => {
               <TrendingUp className="w-4 h-4 text-primary mr-2" />
               <span className="text-sm">+200% Growth</span>
             </div>
-          </div>
+          </div> */}
 
           {/* Main content */}
           <div className="space-y-6 mb-12">
             <h1 className="text-6xl md:text-7xl lg:text-8xl font-bold leading-tight">
-              Be Honorable:<br />
+              Be Honorable<br />
+            </h1>
+            <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary via-yellow-500 to-primary">
                 The Token of True Hustlers
               </span>
-            </h1>
+            </h2>
             <p className="text-xl md:text-2xl text-secondary max-w-2xl font-montserrat">
               A movement for the fearless, the strong, and the honorable. Join the revolution that's redefining success through integrity.
             </p>
@@ -78,7 +80,7 @@ const Hero = ({price}: {price:number;}) => {
           {/* Partner logos */}
           <div className="mt-16">
             <p className="text-sm text-secondary mb-4">Trusted By Industry Leaders</p>
-            <div className="flex flex-wrap gap-8 items-center">
+            {/* <div className="flex flex-wrap gap-8 items-center">
               <img src="https://upload.wikimedia.org/wikipedia/commons/1/1c/Binance_logo.svg" 
                    alt="Binance" 
                    className="h-6 opacity-50 hover:opacity-100 transition-opacity duration-300" />
@@ -89,7 +91,7 @@ const Hero = ({price}: {price:number;}) => {
                 <span>View All Partners</span>
                 <ExternalLink className="w-4 h-4" />
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

@@ -42,6 +42,7 @@ const About = () => {
           </div>
 
           <div className="grid md:grid-cols-2 gap-12 items-center">
+            {/* Left Column - Content */}
             <div className="space-y-6">
               <div className="bg-[#2C2C2C]/80 p-8 rounded-lg backdrop-blur-sm border border-primary/20">
                 <h3 className="text-2xl font-montserrat mb-4 text-primary">Our Mission</h3>
@@ -56,9 +57,8 @@ const About = () => {
                   pursuit, unwavering in principles, and honorable in victory.
                 </p>
               </div>
-            </div>
 
-            <div className="space-y-6">
+              {/* The Code Section */}
               <div className="bg-[#2C2C2C]/80 p-8 rounded-lg backdrop-blur-sm border border-primary/20">
                 <h3 className="text-2xl font-montserrat mb-4 text-primary">The Code</h3>
                 <ul className="space-y-4">
@@ -90,6 +90,28 @@ const About = () => {
                     </div>
                   </li>
                 </ul>
+              </div>
+            </div>
+
+            {/* Right Column - Image */}
+            <div className="relative group">
+              <div className="absolute -inset-1 bg-gradient-to-r from-primary to-primary/50 rounded-lg blur opacity-25 group-hover:opacity-40 transition duration-1000 group-hover:duration-200"></div>
+              <div className="relative h-[600px] overflow-hidden rounded-lg">
+                <img 
+                  src="/grim.jpg" 
+                  alt="Distinguished businessman" 
+                  className="w-full h-full object-cover transform scale-105 group-hover:scale-100 transition-transform duration-500"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-dark via-dark/20 to-transparent"></div>
+                <div className="absolute bottom-0 left-0 right-0 p-8">
+                  <div className="bg-dark/80 backdrop-blur-sm p-6 rounded-lg border border-primary/20">
+                    <h4 className="text-xl font-montserrat mb-2">Leadership Through Honor</h4>
+                    <p className="text-secondary text-sm">
+                      True power lies not in force, but in the respect earned through 
+                      unwavering principles and calculated decisions.
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
