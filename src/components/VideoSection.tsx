@@ -83,11 +83,11 @@ const VideoSection = () => {
                         <Volume2 className="w-5 h-5 text-primary" />
                       )}
                     </button>
-                    <div className="text-sm text-secondary">01:30 / 03:45</div>
+                    {/* <div className="text-sm text-secondary">01:30 / 03:45</div> */}
                   </div>
-                  <button className="bg-primary/10 text-primary px-4 py-2 rounded-lg font-montserrat hover:bg-primary/20 transition-colors duration-300 text-sm">
+                  {/* <button className="bg-primary/10 text-primary px-4 py-2 rounded-lg font-montserrat hover:bg-primary/20 transition-colors duration-300 text-sm">
                     Watch Full Video
-                  </button>
+                  </button> */}
                 </div>
               </div>
             </div>
