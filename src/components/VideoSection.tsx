@@ -1,8 +1,21 @@
 import { Play, Volume2, VolumeX } from 'lucide-react';
-import { useState } from 'react';
+import { useRef, useState } from 'react';
 
 const VideoSection = () => {
   const [isMuted, setIsMuted] = useState(true);
+  const [isPlaying, setIsPlaying] = useState(false);
+  const videoRef = useRef<HTMLVideoElement>(null);
+
+  const handlePlayPause = () => {
+    if (videoRef.current) {
+      if (isPlaying) {
+        videoRef.current.pause();
+      } else {
+        videoRef.current.play();
+      }
+      setIsPlaying(!isPlaying);
+    }
+  };
 
   return (
     <div className="py-24 px-4 relative overflow-hidden">
@@ -32,6 +45,7 @@ const VideoSection = () => {
             {/* Video */}
             <div className="aspect-video relative">
               <video 
+                ref={videoRef}
                 className="w-full h-full object-cover"
                 poster="https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&q=80"
                 loop
@@ -44,8 +58,11 @@ const VideoSection = () => {
 
               {/* Play Button Overlay */}
               <div className="absolute inset-0 flex items-center justify-center bg-dark/50 group-hover:bg-dark/30 transition-colors duration-300">
-                <button className="bg-primary/90 hover:bg-primary text-dark p-6 rounded-full transform transition-all duration-300 group-hover:scale-110">
-                  <Play className="w-8 h-8" />
+                <button 
+                  onClick={handlePlayPause}
+                  className="bg-primary/90 hover:bg-primary text-dark p-6 rounded-full transform transition-all duration-300 group-hover:scale-110"
+                >
+                  <Play className={`w-8 h-8 ${isPlaying ? 'hidden' : ''}`} />
                 </button>
               </div>
 
