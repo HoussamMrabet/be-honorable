@@ -74,10 +74,10 @@ function App() {
         <Community />
       </div>
       <div className="reveal">
-        <Contact />
+        <Stats transactions={transactions} />
       </div>
       <div className="reveal">
-        <Stats transactions={transactions} />
+        <Contact />
       </div>
       <Footer />
     </div>

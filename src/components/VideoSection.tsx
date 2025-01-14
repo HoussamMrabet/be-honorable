@@ -17,6 +17,18 @@ const VideoSection = () => {
     }
   };
 
+  const handleVideoClick = () => {
+    if (videoRef.current) {
+      if (videoRef.current.paused) {
+        videoRef.current.play();
+        setIsPlaying(true);
+      } else {
+        videoRef.current.pause();
+        setIsPlaying(false);
+      }
+    }
+  };
+
   return (
     <div className="py-24 px-4 relative overflow-hidden">
       {/* Background Elements */}
@@ -51,6 +63,7 @@ const VideoSection = () => {
                 loop
                 muted={isMuted}
                 playsInline
+                onClick={handleVideoClick} // Add onClick event to the video
               >
                 <source src="/hustle.mp4" type="video/mp4" />
                 Your browser does not support the video tag.
